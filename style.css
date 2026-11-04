@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: black;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    min-height: 100%;
+    width: 100%;
+}
+
+body {
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+nav span {
+    font-size: 30px;
+    color: yellowgreen;
+}
+
+nav button {
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.products {
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    margin: 10px;
+    flex-wrap: wrap;
+    gap: 100px;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.product-card {
+
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px white;
+    min-height: 350px;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid grey;
+}
+
+.image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.text {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-bottom: 2px;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btns button {
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#form {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(6, 6, 6, 0.95);
+    z-index: 100;
+}
+
+#form input {
+    height: 45px;
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.sub{
+    margin-top: 15px;
+    border-radius: 10px;
+    padding: 10px 20px;
+
+}
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: red;
+}

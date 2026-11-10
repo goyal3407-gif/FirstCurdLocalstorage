@@ -121,3 +121,43 @@ nav button {
 .close:hover {
     color: red;
 }
+/* --- Mobile responsive (added: stacks cards, scales text, tappable buttons) --- */
+@media (max-width: 768px) {
+    body {
+        padding: 12px;
+    }
+    nav {
+        padding: 10px 4px;
+    }
+    nav span {
+        font-size: 24px;
+    }
+    nav button {
+        min-height: 44px;
+        padding: 10px 16px;
+    }
+    .products {
+        gap: 16px;
+        justify-content: center;
+        margin: 0;
+    }
+    .product-card {
+        width: 100%;
+        max-width: 340px;
+        min-height: auto;
+    }
+    .text {
+        font-size: 22px;
+    }
+    #form input {
+        width: 90%;
+        font-size: 16px;
+    }
+    #form h1 {
+        font-size: 24px;
+    }
+    .btns button {
+        min-height: 44px;
+        padding: 10px 14px;
+    }
+}
